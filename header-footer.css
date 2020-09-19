@@ -1,0 +1,139 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* banner settings */
+.banner {
+  background-color: #5b191a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 21vh;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  header img {
+    height: 12vh;
+  }
+  nav {
+    text-align: left;
+    padding: 0 0 0 4rem;
+  }
+  footer img {
+    max-width: 15vw;
+  }
+  footer .logo {
+    text-align: right;
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .banner {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  header img {
+    height: 9vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advertisment {
+    display: none;
+  }
+  .banner {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  header img {
+    border: 2px solid yellow;
+    height: 10vh;
+  }
+  nav {
+    text-align: center;
+  }
+  header nav,
+  footer nav {
+    font-size: large;
+  }
+  footer img {
+    max-width: 70vw;
+  }
+  footer .logo {
+    margin: 0 auto;
+  }
+}
+
+/* banner settings */
+/* navigation settings */
+nav {
+  background-color: black;
+  font-size: x-large;
+}
+
+li {
+  display: inline-block;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/* navigation settings */
+/* footer settings */
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.copyright {
+  padding: 1rem 0;
+  font-size: large;
+  color: white;
+}
+
+/* footer settings */
+/*# sourceMappingURL=header-footer.css.map */

@@ -1,0 +1,154 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-top: 30vh;
+}
+
+.date {
+  text-align: right;
+}
+
+.title {
+  width: 100%;
+  background-color: #c4c4c4;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+/* articles section settings  */
+.articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.article {
+  height: 14rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.article img {
+  max-width: 17rem;
+}
+
+.article h4 {
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background-color: black;
+}
+
+/* articles section settings  */
+/* special section settings */
+.section-great-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding-bottom: 1rem;
+}
+
+.great-banner {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+/* special section settings */
+@media screen and (min-width: 1224px) {
+  main {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    width: 90%;
+    margin: 30vh auto 0 auto;
+  }
+  .article-full-width img {
+    height: 6rem;
+    margin-bottom: 1rem;
+  }
+  .article-full-width {
+    text-align: center;
+  }
+  .section-great-banner img {
+    max-width: 20rem;
+  }
+  .great-banner {
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .extra {
+    display: none;
+  }
+  .article {
+    height: 13rem;
+  }
+  .article img {
+    max-width: 15rem;
+  }
+  .article h4 {
+    height: 40%;
+  }
+  .great-banner {
+    text-align: right;
+  }
+  .article-full-width {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .date {
+    display: none;
+  }
+  .great-banner {
+    display: none;
+  }
+  .article-full-width {
+    display: none;
+  }
+  .article {
+    height: 10rem;
+  }
+  .article img {
+    max-width: 12rem;
+  }
+  .extra img {
+    height: 100%;
+  }
+  .article h4 {
+    height: 40%;
+  }
+}
+/*# sourceMappingURL=main-index.css.map */
